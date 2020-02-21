@@ -1,0 +1,52 @@
+<div class="containerDialog">
+    <h3 mat-dialog-title style="width: 100%"> Cadastro de Usuários</h3>
+    <div class="fecharButton">
+        <button mat-stroked-button (click)="fecharDialog()">
+            <mat-icon class="fecharButtonIcon">close</mat-icon>
+        </button>
+    </div>
+
+        <form (ngSubmit)="enviarForm()" class="cadastro-form" [formGroup]="formCadastroUsuario">
+
+
+            <p>
+                <mat-form-field class="campo-formulario">
+                    <mat-label>Nome</mat-label>
+                    <input matInput placeholder="Digite o nome" formControlName='nome_usuario'
+                        required>
+                    <mat-error
+                        *ngIf="formCadastroUsuario.controls['nome_usuario'].errors?.required && formCadastroUsuario.controls['nome_usuario'].touched">
+                        O nome é obrigatório </mat-error>
+                </mat-form-field>
+            </p>
+
+            <p>
+              <mat-form-field class="campo-formulario">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Digite o email" formControlName='email_usuario'
+                    required>
+                <mat-error
+                    *ngIf="formCadastroUsuario.controls['email_usuario'].errors?.required && formCadastroUsuario.controls['nome_usuario'].touched">
+                    O email é obrigatório </mat-error>
+              </mat-form-field>
+            </p>
+
+            <p>
+              <mat-form-field class="campo-formulario">
+                <mat-label>Telefone</mat-label>
+                <input matInput placeholder="Digite o telefone" formControlName='telefone_usuario'
+                    required>
+                <mat-error
+                    *ngIf="formCadastroUsuario.controls['telefone_usuario'].errors?.required && formCadastroUsuario.controls['telefone_usuario'].touched">
+                    O telefone é obrigatório </mat-error>
+              </mat-form-field>
+            </p>
+
+
+
+            <button mat-raised-button role="submit" color="primary" class="submit-button"
+                [disabled]="!formCadastroUsuario.valid">Salvar</button>
+
+        </form>
+
+    </div>

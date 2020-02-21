@@ -1,0 +1,50 @@
+<mat-card class="card-top">
+   Cadastro de Usuários
+</mat-card>
+
+<mat-card>
+  <mat-card-content>
+
+    <table mat-table class="cadastro-tabela mat-elevation-z8" [dataSource] = "dadosLocalStorage" *ngIf = "!naoHaDados">
+      <ng-container matColumnDef = "nome">
+        <th th mat-header-cell  *matHeaderCellDef>Nome</th>
+        <td mat-cell *matCellDef="let element"> {{element?.nome}} </td>
+      </ng-container>
+
+
+        <ng-container matColumnDef = "email">
+          <th th mat-header-cell  *matHeaderCellDef>Email</th>
+          <td mat-cell *matCellDef="let element"> {{element?.email}} </td>
+        </ng-container>
+
+          <ng-container matColumnDef = "telefone">
+            <th th mat-header-cell  *matHeaderCellDef>Telefone</th>
+            <td mat-cell *matCellDef="let element"> {{element?.telefone}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="acao">
+            <th mat-header-cell  *matHeaderCellDef mat-sort-header> Ações </th>
+            <td mat-cell *matCellDef="let row">
+                <button mat-fab color="primary" (click)="editarUsuario(row)" class="fab-btn-list" style="margin-right:5px;">
+                    <mat-icon matSuffix>edit</mat-icon>
+                </button>
+                <button mat-fab color="primary" (click)="deletarUsuario(row)" class="fab-btn-list">
+                    <mat-icon matSuffix>delete</mat-icon>
+                </button>
+            </td>
+        </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row class="table-row" *matRowDef="let row; columns: displayedColumns;"></tr>
+
+
+
+    </table>
+
+    <div class="semdados" *ngIf = "naoHaDados">
+      <h1>Não há usuários cadastrados!</h1>
+    </div>
+
+    <button mat-mini-fab color="primary" class="btn-trash botao-cadastro"><mat-icon>add</mat-icon></button>
+  </mat-card-content>
+</mat-card>

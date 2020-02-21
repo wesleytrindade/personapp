@@ -1,0 +1,36 @@
+.submit-button
+{
+    margin-top: 15px;
+    margin-left: 40%;
+}
+
+.campo-formulario
+{
+    width: 45%;
+    margin-left: 10px;
+}
+
+.fecharButton
+{
+    position: absolute;
+    float: right;
+    right: -5%;
+    top:-7%;
+}
+.fecharButton button:hover
+{
+    background: red;
+    color: white;
+
+}
+
+.fecharButton button
+{
+    background: transparent;
+    color: grey;
+}
+
+.containerDialog
+{
+    position: relative;
+}
