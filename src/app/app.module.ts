@@ -8,11 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CadastroModule } from './cadastro/cadastro.module';
 import { MatIconModule, MatSnackBarModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
+import { PaginainicialComponent } from './paginainicial/paginainicial.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    PaginainicialComponent,
   ],
   imports: [
     BrowserModule,

@@ -6,3 +6,8 @@
   right: 0;
   background: #eee;
 }
+
+.menu-item{
+
+  cursor: pointer;
+}

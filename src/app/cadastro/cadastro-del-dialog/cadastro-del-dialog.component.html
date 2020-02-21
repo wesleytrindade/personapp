@@ -1,1 +1,16 @@
-<p>cadastro-del-dialog works!</p>
+<!--TELA PARA DELETAR OS REGISTROS-->
+<div mat-dialog-content>
+
+  <div class="detalhes-registro">
+      <h4>Deseja deletar este registro?</h4>
+      <p>Nome: {{this.dados.dados.nome}}</p>
+      <p>Email: {{this.dados.dados.email}}</p>
+      <p>Telefone: {{this.dados.dados.telefone}}</p>
+  </div>
+
+  <div class="opcoes-dialog">
+      <button mat-raised-button color="primary" (click) = "deletarRegistro()"> SIM</button>
+      <button mat-stroked-button (click) = "fecharDialog()">NÃO</button>
+  </div>
+
+</div>

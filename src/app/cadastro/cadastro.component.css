@@ -1,6 +1,6 @@
-.cadastro-tabela{width: 90%; margin-left: 3%;}
-.botao-cadastro{position: relative; float: right; right: 3%; top:3%;}
+.cadastro-tabela{width: 95%}
+.botao-cadastro{position: relative; float: right; right: 3%; margin-top:1%;}
 .card-top{margin-top: 10px;margin-bottom: 10px;color: #909090;font-weight: 500;}
-.semdados{
-  text-align: center;
- }
+.fab-btn-list{width: 28px;height: 28px;margin-top:10px;}
+.fab-btn-list mat-icon{text-align: center;margin-top: -20px;font-size: 18px;}
+.semdados{text-align: center;}

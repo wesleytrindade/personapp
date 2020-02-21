@@ -6,8 +6,10 @@
 
 .campo-formulario
 {
-    width: 45%;
-    margin-left: 10px;
+    width: 80%;
+    position: relative;
+    left:5%;
+
 }
 
 .fecharButton

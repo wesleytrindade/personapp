@@ -1,7 +1,8 @@
 .navbar-menu{width: 100%; height: 30px; background-color: #010101 ;}
 .menu-button{color:#fff}
 .grid-outlet{padding:0;margin:0}
-.home-title h2{}
+.home-title{margin-left: 2%;}
+.home-title h2{color: #fff; font-family: BlackList; font-size: 24px;}
 
 .sidenav-container {overflow: hidden; height: 100%;}
 .sidenav-container mat-sidenav{ width: 300px;}

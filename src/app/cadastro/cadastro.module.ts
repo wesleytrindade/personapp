@@ -3,7 +3,7 @@ import { NgModule } from "@angular/core";
 import { CadastroComponent } from './cadastro.component';
 import { CadastroAddDialogComponent } from './cadastro-add-dialog/cadastro-add-dialog.component';
 import { CadastroDelDialogComponent } from './cadastro-del-dialog/cadastro-del-dialog.component';
-import { MatFormFieldModule, MatButtonModule, MatCardModule, MatTableModule, MatIconModule, MatDialogModule } from '@angular/material';
+import { MatFormFieldModule, MatButtonModule, MatCardModule, MatTableModule, MatIconModule, MatDialogModule, MatInputModule } from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CadastroService } from './service/cadastro.service';
 
@@ -24,6 +24,7 @@ import { CadastroService } from './service/cadastro.service';
     MatTableModule,
     MatIconModule,
     MatDialogModule,
+    MatInputModule
 
 
   ],
